@@ -6,6 +6,22 @@ Este repositorio nos servirá para demostrar el uso de Git en la asignatura de E
 
 Los comandos del Makefile funcionarán en Linux y MacOS. En caso de usar Windows, necesitarás adaptarlos o ejecutarlos en una máquina virtual Linux.
 
+## Prerequisitos
+Tener instalado Python (con la versión 3.X).
+* En Ubuntu instalar mediante:
+```
+$ sudo apt-get update
+$ sudo apt-get install python3.X
+```
+_Donde X es la version que deseamos instalar_
+
+* En MacOS instalar mediante:
+```
+$ brew install python
+```
+_Debe descargar el interprete de [brew](https://brew.sh/index_es)_
+
+
 ## Ejecución
 ```
 python3 main.py <filename> <dup>
