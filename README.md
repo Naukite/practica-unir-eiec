@@ -28,3 +28,50 @@ siguiente patron:
 ```
 **NOTA:** Como podemos ver, como se ha enunciado en apartados anteriores, debe ser una palabra por linea.
 
+## Ejemplos de ejecución
+
+### Ejemplo 1 - Sin eliminacion de duplicados
+1. Deberiamos crear un fichero con el formato enunciado anteriormente:
+```
+jenkins
+kubernetes
+docker
+devops
+packer
+docker
+```
+**NOTA:** En nuestro caso el fichero estara ubicado en: examples/words.txt
+
+2. Una vez hecho esto, ejecutaremos el script mediante el comando siguiente (en este caso indicando
+que no queremos que elimine las palabras duplicadas):
+```
+python3 main.py examples/prueba.txt no
+```
+3. El resultado, como le hemos indicado que no queremos que elimine los duplicados sera el siguiente:
+```
+['devops', 'docker', 'docker', 'jenkins', 'kubernetes', 'packer']
+```
+_Vemos como la palabra "docker" aparece duplicada._
+
+### Ejemplo 2 - Con eliminacion de duplicados
+1. Deberiamos crear un fichero con el formato enunciado anteriormente:
+```
+jenkins
+kubernetes
+docker
+devops
+packer
+docker
+```
+**NOTA:** En nuestro caso el fichero estara ubicado en: examples/words.txt
+
+2. Una vez hecho esto, ejecutaremos el script mediante el comando siguiente (en este caso indicando
+que queremos que elimine las palabras duplicadas):
+```
+python3 main.py examples/prueba.txt yes
+```
+3. El resultado, como le hemos indicado que queremos que elimine los duplicados sera el siguiente:
+```
+['devops', 'docker', 'jenkins', 'kubernetes', 'packer']
+```
+_Vemos como la palabra "docker" aparece solo una vez._
