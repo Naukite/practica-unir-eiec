@@ -91,3 +91,6 @@ python3 main.py examples/prueba.txt yes
 ['devops', 'docker', 'jenkins', 'kubernetes', 'packer']
 ```
 _Vemos como la palabra "docker" aparece solo una vez._
+
+## Contacte con nosotros
+Si tiene alguna duda, por favor contacte a través del canal de comunicación de la Universidad UNIR.
