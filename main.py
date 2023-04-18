@@ -31,6 +31,9 @@ if __name__ == "__main__":
         remove_duplicates = sys.argv[2].lower() == "yes"
         if len(sys.argv) == 4:
             order = sys.argv[3].lower()
+            if not ((order == "ascending") or (order == "descending")):
+                print("Opcion de order no valida, por favor asegurate de que sea ascending o descending")
+                sys.exit(1)
     else:
         print("Se debe indicar el fichero como primer argumento")
         print("El segundo argumento indica si se quieren eliminar duplicados")
